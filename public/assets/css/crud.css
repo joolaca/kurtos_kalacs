@@ -1,0 +1,169 @@
+.sort_table .sorting{
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+
+}
+.sort_table .sorting::after{
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0dc";
+    color: #eeeeee;
+}
+
+.sort_table .sorting.desc::after{
+    content: "\f0dd";
+    color: #337ab7;
+}
+
+.sort_table .sorting.asc::after{
+    content: "\f0de";
+    color: #337ab7;
+}
+
+.ctud_table_img{
+    max-width: 100px;
+    max-height: 50px;
+}
+
+
+.cf_row{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.cf_row.slides{
+    display: inherit;
+    justify-content: inherit;
+}
+
+.cf_field{
+    width: 100%;
+    margin: 0 10px;
+}
+
+.cf_field img{
+    max-width:350px;
+    max-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.image_upload_container{
+    float: left;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+}
+
+.image_field_container{
+    float: left;
+    position: relative;
+}
+
+div.uploaded_image_container{
+    border-left: 1px solid #c2cad8;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.image_field_container:hover .image_field_overlay
+,.image_field_container:hover .icons_container{
+    opacity : 1;
+    transition: all .4s ease-in-out;
+}
+.image_field_overlay{
+    opacity : 0;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    transition: all .4s ease-in-out;
+}
+
+.icons_container{
+    opacity : 0;
+    position: absolute;
+    z-index: 150;
+    top: 40%;
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+.image_field_container a{
+    margin: 0 5px;
+}
+
+/**
+SLIDE ELEMENTS
+ */
+
+.cf_row .cf_field .slide-element,
+.cf_row .cf_field .icon-element
+{
+    margin-left: -15px;
+}
+.cf_field .slide-element img, .modal-body img,
+.cf_field .icon-element img, .modal-body img
+{
+    max-width:none;
+    max-height:none;
+}
+
+.cf_field .icon-element img{
+    width: auto;
+    margin: 0 auto;
+    max-width: 200px;
+    min-height: 100px;
+}
+
+div#offer_modal .modal-body img{
+    max-width: 100%;
+}
+
+.cf_field .icon-element img.preload_img_field{
+    width: 100%;
+    margin: auto;
+    max-width: none;
+    max-height: none;
+}
+
+/****** TOASTR ****/
+.toast .toast-close-button{
+    text-indent: inherit;
+    background-image: none !important;
+}
+
+/** CROP IMAGES **/
+img.crop_image{
+    cursor: pointer;
+}
+.jcrop-keymgr{display: none;}
+
+.ccalign{
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+tr.private td:first-child{
+    width: 55px;
+    padding: 5px;
+}
+
+tr.private td:first-child:after, div.private:after{
+    display: inline-block;
+    margin-left: 5px;
+    font-family: FontAwesome;
+    color: #ed6b75;
+    content: " \f023";
+}
+
+.pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,1 @@
+{{ Form::hidden($field->getName(), $value, $field->getAttributes()) }}

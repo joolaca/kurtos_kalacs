@@ -1,0 +1,1 @@
+<img src="{{ $slide->adminIndexImageUrl('image', $thumbnail ? $thumbnail : '') }}" />
